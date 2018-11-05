@@ -1,0 +1,75 @@
+body, html {
+	padding: 0;
+	margin: 0;
+}
+.container {
+	height: 720px;
+	background: url("images/bgd.jpg") no-repeat center top / cover;
+	position: relative;
+}
+.container_reg {
+	height: 720px;
+	background: url("images/regmint.jpg") no-repeat center top / cover;
+	position: relative;	
+}
+
+.sidebar {
+	width: 75px;
+	height: 100%;
+	background: rgba(0,0,0,0.3);
+	position: absolute;
+}
+
+.icons i {
+	padding-left: 20px;
+	padding-top: 20px;
+	color: #d0d9e5;
+}
+
+
+.title {
+	width: 500px;
+	height: 600px;
+	position: absolute;
+	top: 15%;
+	right: 35%;
+	text-align: center;
+}
+.title_reg {
+	width: 500px;
+	height: 200px;
+	position: absolute;
+	top: 5%;
+	right: 33%;
+	text-align: center;
+}
+.title h1, .title_reg h1 {
+	font-family: 'Josefin Sans', sans-serif;
+	color: #d0d9e5;
+	font-size: 90px;
+}
+
+.login_form {
+	width: 500px;
+	height: 400px;
+	position: absolute;
+	right: 33%;
+	top: 38%;
+	text-align: center;
+}
+
+input {
+	margin: 15px auto;
+	background: rgba(0,0,0,0.6);
+	border: 0;
+	height: 30px
+}
+
+.login_form img {
+	width: 40px;
+	height: 40px;
+	margin: 10px 10px;
+	position: absolute;
+	left: 2%;
+	color: #d0d9e5;
+}
