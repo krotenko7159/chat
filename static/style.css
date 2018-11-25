@@ -99,3 +99,23 @@ input {
 	width: 10%;
 	height: 10%;
 }
+input, label {
+	font-family: 'Josefin Sans', sans-serif;
+	color: #d0d9e5;
+	font-size: 1.5em;
+}
+
+.image_settings {
+	background-color: rgba(0,0,0,0.3);
+	width: 20%;
+	height: 85%;
+	position: fixed;
+	top: 6%;
+	right: 1%;
+}
+.image_settings h1 {
+	font-family: 'Josefin Sans', sans-serif;
+	color: #d0d9e5;
+	font-size: 1.5em;
+	text-align: center;
+}
