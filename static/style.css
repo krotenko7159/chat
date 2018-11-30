@@ -19,7 +19,8 @@ body, html {
 	width: 75px;
 	height: 100%;
 	background: rgba(0,0,0,0.3);
-	position: fixed;
+	position: absolute;
+	display: block;
 }
 
 .icons i {
@@ -37,11 +38,28 @@ body, html {
 }
 .title_reg {
 	/*width: 500px;
-	height: 200px;*/
+	height: 200px;
 	position: fixed;
 	top: 5%;
 	right: 42%;
-	text-align: center;
+	text-align: center;*/
+	/*display: block;
+	position: absolute;
+	margin-left:auto;
+	margin-right: auto;
+	margin-top: auto;*/
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+
+}
+.title_reg h1 {
+	margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 .title h1, .title_reg h1, .profile_settings h1 {
 	font-family: 'Josefin Sans', sans-serif;
@@ -50,17 +68,24 @@ body, html {
 }
 
 .login_form {
-	position: fixed;
-	right: 40%;
+	position: absolute;
+	right: 33%;
 	top: 38%;
 	text-align: center;
+	/*display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 45em; 
+	position: absolute;
+	display: flex;
+  	justify-content: center;*/
 }
 
 input {
 	margin: 15px auto;
 	background: rgba(0,0,0,0.6);
 	border: 0;
-	height: 30px
+	height: 30px;
 }
 
 .login_form img {
@@ -71,9 +96,6 @@ input {
 	left: 2%;
 	color: #d0d9e5;
 }
-
-
-
 			/*profileSet*/
 
 .profile_settings {
@@ -118,4 +140,50 @@ input, label {
 	color: #d0d9e5;
 	font-size: 1.5em;
 	text-align: center;
+}
+
+/* ---------------- contacts.html --------------- */
+
+.contact_list {
+	display: inline-block;
+	position: absolute;
+	background-color: rgba(0,0,0,0.6);
+	margin: 2% 10%; 
+	width: 30%;
+	height: 80%;
+}
+
+.user_img {
+	display: inline-block;
+	margin-left: 4%;
+	width: 16%;
+	height: 8%;
+	background: linear-gradient(to right, #fefcea, #f1da36);
+	border-radius: 5px;
+	border: 0;
+	/*border-color: rgba(0,0,0,0.0);*/
+	font-family: 'Bitter', serif;
+	font-size: 1.6em;
+}
+.add_user {
+	display: inline-block;
+	margin: 5% 39%;
+	width: 16%;
+	height: 8%;
+	background: rgba(0,0,0,0.0);
+	border-radius: 5px;
+	border: 0;
+	font-size: 1.6em;
+	color: white;
+}
+.add_user:hover {
+	display: inline-block;
+	margin: 5% 39%;
+	width: 16%;
+	height: 8%;
+	background: rgba(0,0,0,0.9);
+	border-radius: 5px;
+	border: 0;
+	font-size: 1.6em;
+	color: white;
 }

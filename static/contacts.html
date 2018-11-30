@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contacts</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Quicksand" rel="stylesheet">
+	<link href="hamburgers-master/dist/hamburgers.css" rel="stylesheet">
+</head>
+<body>
+
+	<div class="container_reg">
+			<div class="sidebar">
+				<a href="index.html" class="icons"><i class="fab fa-monero fa-inverse fa-2x"></i></a>
+				<a href="#" class="icons"><i class="fas fa-address-book fa-inverse fa-2x"></i></a>
+				<a href="#" class="icons"><i class="fas fa-search fa-inverse fa-2x"></i></a>
+				<a href="#" class="icons"><i class="fas fa-envelope fa-inverse fa-2x"></i></a>
+				<a href="#"	class="icons"><i class="fas fa-cog fa-inverse fa-2x" style="padding-left: 18px"></i></a>
+			</div>
+
+			<div class="contact_list">
+				<h1 style="text-align: center; font-family: 'Josefin Sans', sans-serif; color: #d0d9e5; font-size: 1.5em; letter-spacing: 6px;">Contacts</h1>
+				<button class="user_img">MC</button> <label style="display: inline-block; padding: 3%;">Mary Cury</label> <br />
+				<button class="user_img" style="background: linear-gradient(to right, #0461f7, #89b2f4);">VI</button> <label style="display: inline-block; padding: 3%; padding-top: 4%;">Valera Igorevich</label> <br />
+				<button class="user_img" style="background: linear-gradient(to right, #21f228, #8dfc91);">NB</button> <label style="display: inline-block; padding: 3%; padding-top: 4%;">Nicolay Bascov</label> <br />
+				<button class="user_img" style="background: linear-gradient(to right, #fc392e, #fcada9);">PP</button> <label style="display: inline-block; padding: 3%; padding-top: 4%;">Pinguin Petenka</label> <br />
+				<button class="user_img" style="background: linear-gradient(to right, #3d0638, #f215de);">VV</button> <label style="display: inline-block; padding: 3%; padding-top: 4%;">Vasya Vasya</label> <br />
+				<button class="user_img" style="background: linear-gradient(to right, #06544c, #11f4dd);">GL</button> <label style="display: inline-block; padding: 3%; padding-top: 4%;">Grigory Leps</label> <br />
+				<button class="user_img" style="background: linear-gradient(to right, #000000, #ffffff);">EK</button> <label style="display: inline-block; padding: 3%; padding-top: 4%;">Elena Krotenko</label> <br />
+				<button class="add_user">+</button>
+			</div>
+				
+	</div>
+
+		<script
+	 	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  	crossorigin="anonymous"></script>
+
+  <!-- ANIMATION -->	  	
+	<script type="text/javascript">
+		$(document).ready(() => {
+			$('i').hover(
+	       		function(){ $(this).addClass('fa-spin') },
+	       		function(){ $(this).removeClass('fa-spin') }
+			);
+		})
+	</script>
+</body>
+</html>
