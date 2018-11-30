@@ -187,3 +187,26 @@ input, label {
 	font-size: 1.6em;
 	color: white;
 }
+
+.self_profile {
+	display: inline-block;
+	position: absolute;
+	background-color: rgba(0,0,0,0.6);
+	margin: 2% 57%; 
+	width: 35%;
+	height: 80%;
+}
+.profile_info {
+	display: inline-block;
+	position: absolute;
+	top: 47%;
+	right: 28%;
+	width: 50%;
+	height: 40%;
+	text-align: center;
+}
+h2 {
+	font-family: 'Josefin Sans', sans-serif;
+	color: #d0d9e5;
+	font-size: 1.2em;
+}
