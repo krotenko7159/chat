@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Quicksand" rel="stylesheet">
+	<link href="hamburgers-master/dist/hamburgers.css" rel="stylesheet">
+</head>
+<body>
+
+	<div class="container_reg">
+			<div class="sidebar">
+				<a href="/" class="icons"><i class="fab fa-monero fa-inverse fa-2x"></i></a>
+				<a href="#" class="icons"><i class="fas fa-bars fa-inverse fa-2x"></i></a>
+				<a href="#"	class="icons"><i class="fas fa-cog fa-inverse fa-2x" style="padding-left: 18px"></i></a>
+			</div>
+			<div class="title_reg">
+				<h1>Registration</h1>
+			</div>
+			<div class="login_form">
+				<form name="login" method="post" action="/register">
+					<img src="images/7.png" class="phone">
+					<input type="tel" name="phone_number" size="45"> <br />
+					<img src="images/6.png">
+					<input type="email" name="email" size="45"> <br />
+					<img src="images/4.png">
+					<input type="text" name="username" size="45"> <br />
+					<img src="images/9.png">
+					<input type="password" name="password" size="45"> <br />
+					<img src="images/9.png">
+					<input type="password" name="confirm" size="45"> <br />
+					<a href="contacts.html"><img src="images/5.png" style="margin-left: 37%; width: 80px; height: 80px"></a>
+
+				</form>
+			</div>
+	</div>
+
+		<script
+	 	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  	crossorigin="anonymous"></script>
+
+  <!-- ANIMATION -->	  	
+	<script type="text/javascript">
+		$(document).ready(() => {
+			$('i').hover(
+	       		function(){ $(this).addClass('fa-spin') },
+	       		function(){ $(this).removeClass('fa-spin') }
+			);
+		})
+	</script>
+</body>
+</html>
