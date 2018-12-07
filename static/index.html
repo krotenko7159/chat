@@ -1,43 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>MINT</title>
+	<title>Contacts</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Quicksand" rel="stylesheet">
 	<link href="hamburgers-master/dist/hamburgers.css" rel="stylesheet">
-
-
 </head>
 <body>
-	
-	<div class="container">
-		
-		<div class="sidebar">
-			<a href="#" class="icons"><i class="fab fa-monero fa-inverse fa-2x"></i></a>
-			<a href="regindex.html" class="icons"><i class="fas fa-door-closed fa-inverse fa-2x" style="padding-left: 15px"></i></a>
-			<a href="#" class="icons"><i class="fas fa-shoe-prints fa-inverse fa-2x" style="padding-left: 15px" ></i></a>
-			<a href="#"	class="icons"><i class="fas fa-cog fa-inverse fa-2x" style="padding-left: 18px"></i></a>
-		</div>
 
-		<div class="title">
-			<h1>Welcome</h1>
-			<h1>to the</h1> 
-			<h1>Mint</h1>
-		</div>
+	<div class="container_reg">
+			<div class="sidebar">
+				<a href="index.html" class="icons"><i class="fab fa-monero fa-inverse fa-2x"></i></a>
+				<a href="#" class="icons"><i class="fas fa-address-book fa-inverse fa-2x"></i></a>
+				<a href="#" class="icons"><i class="fas fa-search fa-inverse fa-2x"></i></a>
+				<a href="#" class="icons"><i class="fas fa-envelope fa-inverse fa-2x"></i></a>
+				<a href="#"	class="icons"><i class="fas fa-cog fa-inverse fa-2x" style="padding-left: 18px"></i></a>
+			</div>
 
+			<div class="contact_list">
+				<h1 style="text-align: center; font-family: 'Josefin Sans', sans-serif; color: #d0d9e5; font-size: 1.5em; letter-spacing: 6px;">Contacts</h1>
+				<button class="user_img">MC</button> <label style="display: inline-block; padding: 3%;">Mary Cury</label> <div class="online"></div> <br />
+				<button class="user_img" style="background: linear-gradient(to right, #0461f7, #89b2f4);">VI</button> <label style="display: inline-block; padding: 3%; padding-top: 4%;">Valera Igorevich</label> <br />
+				<button class="user_img" style="background: linear-gradient(to right, #21f228, #8dfc91);">NB</button> <label style="display: inline-block; padding: 3%; padding-top: 4%;">Nicolay Bascov</label> <br />
+				<button class="user_img" style="background: linear-gradient(to right, #fc392e, #fcada9);">PP</button> <label style="display: inline-block; padding: 3%; padding-top: 4%;">Pinguin Petenka</label> <div class="online"></div> <br />
+				<button class="user_img" style="background: linear-gradient(to right, #3d0638, #f215de);">VV</button> <label style="display: inline-block; padding: 3%; padding-top: 4%;">Vasya Vasya</label> <div class="online"></div> <div style="width: 10px; height: 10px; display: inline-block;"><i class="far fa-envelope fa-inverse"></i></div><br />
+				<button class="user_img" style="background: linear-gradient(to right, #06544c, #11f4dd);">GL</button> <label style="display: inline-block; padding: 3%; padding-top: 4%;">Grigory Leps</label> <br />
+				<button class="user_img" style="background: linear-gradient(to right, #000000, #ffffff);">EK</button> <label style="display: inline-block; padding: 3%; padding-top: 4%;">Elena Krotenko</label> <div class="online"></div> <br />
+				<button class="add_user">+</button>
+			</div>
+
+			<div class="window_chat">
+				<div class="topbar_chat">
+					<button class="chat_user_img" style="background: linear-gradient(to right, #000000, #ffffff);">EK</button> <label style="display: inline-block; padding: 3%; padding-top: 4%;">Elena Krotenko</label> <div class="online"></div><br /> 
+				</div>
+				<div class="chat">
+					<ul>
+						<li class="user_msg">Hello!</li>
+						<li class="mine_msg">Hi!</li>
+						<li class="mine_msg">How are u?</li>
+					</ul>
+					<input type="text" placeholder="Enter Message">
+				</div>
+			</div>
+				
 	</div>
 
-
-	<script
+		<script
 	 	src="https://code.jquery.com/jquery-3.3.1.min.js"
 	  	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	  	crossorigin="anonymous"></script>
-
+		<script type="text/javascript" src="chat.js"></script>
   <!-- ANIMATION -->	  	
 	<script type="text/javascript">
 		$(document).ready(() => {
-			$('i').hover(
+			$('.sidebar i').hover(
 	       		function(){ $(this).addClass('fa-spin') },
 	       		function(){ $(this).removeClass('fa-spin') }
 			);
